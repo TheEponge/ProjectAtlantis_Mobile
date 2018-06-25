@@ -1,0 +1,8 @@
+{
+  "name": "ATLANTIS",
+  "app_id": "43289a4d",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
