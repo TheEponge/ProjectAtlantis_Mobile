@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 import { NavController, NavParams } from 'ionic-angular';
 import { Platform, ActionSheetController } from 'ionic-angular';
+import { AlertController } from 'ionic-angular';
 
 import { ItemDetailsPage } from '../item-details/item-details';
 
@@ -13,7 +14,7 @@ export class ListPage {
   icons: string[];
   items: Array<{title: string, note: string, icon: string}>;
 
-  constructor(public actionsheetCtrl: ActionSheetController,public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public alertCtrl: AlertController,public actionsheetCtrl: ActionSheetController,public navCtrl: NavController, public navParams: NavParams) {
 
     this.items = [];
     for(let i = 1; i < 8; i++) {
@@ -29,6 +30,36 @@ export class ListPage {
     this.navCtrl.push(ItemDetailsPage, {
       item: item
     });
+  }
+
+  addDevicePrompt(){
+
+    const prompt = this.alertCtrl.create({
+      title: 'Add Device',
+      message: "Enter Blablabla",
+      inputs: [
+        {
+          name: 'input',
+          placeholder: 'Input'
+        },
+      ],
+      buttons: [
+        {
+          text: 'Cancel',
+          handler: data => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Save',
+          handler: data => {
+            console.log('Saved clicked');
+          }
+        }
+      ]
+    });
+    prompt.present();
+
   }
 
   openMenu() {
