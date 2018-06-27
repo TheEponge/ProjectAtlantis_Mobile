@@ -3,31 +3,28 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Index</ion-title>
+    <ion-title>Atlantis App</ion-title>
+    <ion-buttons end (click)="loginPrompt()">
+      <button ion-button icon-only>
+        <ion-icon name="log-in"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
 
-  <h3>Login</h3>
 
-  <ion-list>
+  <img src="./assets/imgs/skyline.png"/>
 
-  <ion-item>
-    <ion-label fixed>Username</ion-label>
-    <ion-input type="text" value=""></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label fixed>Password</ion-label>
-    <ion-input type="password"></ion-input>
-  </ion-item>
-
-  </ion-list>
-
-  <div padding>
-    <button ion-button block>Sign In</button>
+  <div>
+    <button color="color1" ion-button block>Metrics</button>
   </div>
-
+  <div>
+    <button color="color2" ion-button block>Device</button>
+  </div>
+  <div>
+    <button color="color3" ion-button block>Employee</button>
+  </div>
 
 </ion-content>
