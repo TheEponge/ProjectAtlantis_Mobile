@@ -13,14 +13,13 @@ export class ListPage {
   items: Array<{title: string, note: string, icon: string}>;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.icons = ['flask', 'wifi', 'beer', 'football', 'basketball', 'paper-plane',
-    'american-football', 'boat', 'bluetooth', 'build'];
+    this.icons = ['cog'];
 
     this.items = [];
     for(let i = 1; i < 11; i++) {
       this.items.push({
-        title: 'Item ' + i,
-        note: 'This is item #' + i,
+        title: 'Device ' + i,
+        note: 'This is device #' + i,
         icon: this.icons[Math.floor(Math.random() * this.icons.length)]
       });
     }
