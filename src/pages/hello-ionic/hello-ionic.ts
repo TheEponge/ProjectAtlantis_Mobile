@@ -7,9 +7,7 @@ import { AlertController } from 'ionic-angular';
   templateUrl: 'hello-ionic.html'
 })
 export class HelloIonicPage {
-  constructor(public alertCtrl: AlertController) {
-
-  }
+  constructor(public alertCtrl: AlertController) { }
 
   loginPrompt(){
 
