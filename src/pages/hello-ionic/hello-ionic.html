@@ -17,8 +17,14 @@
   <div text-center>
     <img  src="./assets/imgs/skyline.png"/>
   </div>
-  <button color="color1" ion-button block (click)="goMetricsPage()"><ion-icon name="trending-up"></ion-icon> Metrics</button>
-  <button color="color2" ion-button block (click)="goListPage()"><ion-icon name="cog"></ion-icon> Devices</button>
-  <button color="color3" ion-button block (click)="goEmployeePage()"><ion-icon name="person"></ion-icon> Employee</button>
+  <div padding-vertical>
+    <button color="color1" ion-button block large (click)="goMetricsPage()"><ion-icon name="trending-up"></ion-icon> Metrics</button>
+  </div>
+  <div padding-bottom>
+    <button color="color2" ion-button block large (click)="goListPage()"><ion-icon name="cog"></ion-icon> Devices</button>
+  </div>
+  <div padding-bottom>
+    <button color="color3" ion-button block large (click)="goEmployeePage()"><ion-icon name="person"></ion-icon> Employee</button>
+  </div>
 
 </ion-content>
