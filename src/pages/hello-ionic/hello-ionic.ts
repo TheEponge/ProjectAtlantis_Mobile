@@ -5,6 +5,7 @@ import { NavController } from "ionic-angular";
 
 import { ListPage } from '../list/list';
 import { MetricsPage } from '../metrics/metrics';
+import { EmployeePage } from '../employee/employee';
 
 @Component({
   selector: 'page-hello-ionic',
@@ -18,6 +19,9 @@ export class HelloIonicPage {
   }
   goMetricsPage(): void {
      this.navCtrl.push(MetricsPage);
+  }
+  goEmployeePage(): void {
+     this.navCtrl.push(EmployeePage);
   }
 
   loginPrompt(){

@@ -5,6 +5,7 @@ import { Platform, MenuController, Nav } from 'ionic-angular';
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ListPage } from '../pages/list/list';
 import { MetricsPage } from '../pages/metrics/metrics';
+import { EmployeePage } from '../pages/employee/employee';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -32,6 +33,7 @@ export class MyApp {
     this.pages = [
       { title: 'Index', component: HelloIonicPage },
       { title: 'Metrics', component: MetricsPage },
+      { title: 'Employee', component: EmployeePage },
       { title: 'Devices', component: ListPage }
     ];
   }
