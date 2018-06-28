@@ -1,9 +1,9 @@
 <ion-header>
   <ion-navbar>
-    <button ion-button menuToggle>
+    <!--<button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Atlantis</ion-title>
+    </button>-->
+    <ion-title>Atlantis App</ion-title>
     <ion-buttons end (click)="loginPrompt()">
       <button ion-button icon-only>
         <ion-icon name="log-in"></ion-icon>
@@ -17,14 +17,8 @@
   <div text-center>
     <img  src="./assets/imgs/skyline.png"/>
   </div>
-  <div>
-    <button color="color1" ion-button block><ion-icon name="trending-up"></ion-icon> Metrics</button>
-  </div>
-  <div>
-    <button color="color2" ion-button block><ion-icon name="cog"></ion-icon> Devices</button>
-  </div>
-  <div>
-    <button color="color3" ion-button block><ion-icon name="person"></ion-icon> Employee</button>
-  </div>
+  <button color="color1" ion-button block (click)="goMetricsPage()"><ion-icon name="trending-up"></ion-icon> Metrics</button>
+  <button color="color2" ion-button block (click)="goListPage()"><ion-icon name="cog"></ion-icon> Devices</button>
+  <button color="color3" ion-button block ><ion-icon name="person"></ion-icon> Employee</button>
 
 </ion-content>

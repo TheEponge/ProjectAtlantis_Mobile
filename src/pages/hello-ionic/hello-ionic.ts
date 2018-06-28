@@ -1,13 +1,24 @@
 import { Component } from '@angular/core';
 
 import { AlertController } from 'ionic-angular';
+import { NavController } from "ionic-angular";
+
+import { ListPage } from '../list/list';
+import { MetricsPage } from '../metrics/metrics';
 
 @Component({
   selector: 'page-hello-ionic',
   templateUrl: 'hello-ionic.html'
 })
 export class HelloIonicPage {
-  constructor(public alertCtrl: AlertController) { }
+  constructor(public navCtrl: NavController,public alertCtrl: AlertController) { }
+
+  goListPage(): void {
+     this.navCtrl.push(ListPage);
+  }
+  goMetricsPage(): void {
+     this.navCtrl.push(MetricsPage);
+  }
 
   loginPrompt(){
 
