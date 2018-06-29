@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-    <button menuToggle *ngIf="!selectedItem">
+    <button menuToggle *ngIf="!selectedDevice">
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>Device Details</ion-title>
@@ -8,10 +8,16 @@
 </ion-header>
 
 <ion-content>
-  <h3 text-center *ngIf="selectedItem">
-    {{selectedItem.title}}
-    <ion-icon [name]="selectedItem.icon"></ion-icon>
+  <h3 text-center *ngIf="selectedDevice">
+    {{selectedDevice.nomDevice}}
+    <ion-icon name="cog" item-left></ion-icon>
   </h3>
+  <p text-center>
+    {{selectedDevice.typeDevice}} : {{selectedDevice.lastMetrics}} {{selectedDevice.lastMetricUnitName}}
+  </p>
+  <p text-center>
+    GEID : {{selectedDevice.geidDevice}}
+  </p>
 
   <div text-center>
     <button ion-button>Action</button>

@@ -4,6 +4,9 @@ import { NavController, NavParams } from 'ionic-angular';
 import { ActionSheetController } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
 
+import { Http } from '@angular/http';
+import 'rxjs/add/operator/map';
+
 import { ItemDetailsPage } from '../item-details/item-details';
 
 @Component({
@@ -11,24 +14,21 @@ import { ItemDetailsPage } from '../item-details/item-details';
   templateUrl: 'list.html'
 })
 export class ListPage {
-  icons: string[];
-  items: Array<{title: string, note: string, icon: string}>;
+  
+  devices: any;
 
-  constructor(public alertCtrl: AlertController,public actionsheetCtrl: ActionSheetController,public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public http: Http,public alertCtrl: AlertController,public actionsheetCtrl: ActionSheetController,public navCtrl: NavController, public navParams: NavParams) {
 
-    this.items = [];
-    for(let i = 1; i < 8; i++) {
-      this.items.push({
-        title: 'Device ' + i,
-        note: 'This is item #' + i,
-        icon: 'cog'
-      });
-    }
+    this.http.get('http://10.167.129.210:15080/RESTModuleRemote/api/mobile/getDevices/1')
+        .map(res => res.json()).subscribe(data => {
+        this.devices = data;
+    });
+
   }
 
-  itemTapped(event, item) {
+  deviceTapped(event, device) {
     this.navCtrl.push(ItemDetailsPage, {
-      item: item
+      device: device
     });
   }
 
@@ -87,6 +87,4 @@ export class ListPage {
     });
     actionSheet.present();
   }
-
-
 }

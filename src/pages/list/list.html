@@ -13,10 +13,12 @@
 </ion-header>
 
 <ion-content>
+
   <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)" (press)="openMenu()">
-      <ion-icon name="{{item.icon}}" item-left></ion-icon>
-      {{item.title}}
+    <button ion-item *ngFor="let device of devices" (click)="deviceTapped($event, device)" (press)="openMenu()">
+      <ion-icon name="cog" item-left></ion-icon>
+      {{device.nomDevice}}
     </button>
   </ion-list>
+
 </ion-content>
