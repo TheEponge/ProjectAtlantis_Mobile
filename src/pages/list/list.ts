@@ -14,7 +14,7 @@ import { ItemDetailsPage } from '../item-details/item-details';
   templateUrl: 'list.html'
 })
 export class ListPage {
-  
+
   devices: any;
 
   constructor(public http: Http,public alertCtrl: AlertController,public actionsheetCtrl: ActionSheetController,public navCtrl: NavController, public navParams: NavParams) {
