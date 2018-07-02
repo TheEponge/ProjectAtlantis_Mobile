@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { AlertController } from 'ionic-angular';
 import { NavController } from "ionic-angular";
 import { InAppBrowser, InAppBrowserOptions } from '@ionic-native/in-app-browser';
+//import { Http } from '@angular/common/http';
 
 import { ListPage } from '../list/list';
 import { MetricsPage } from '../metrics/metrics';
@@ -32,11 +33,27 @@ export class HelloIonicPage {
     fullscreen : 'yes',//Windows only
 };
 
-  constructor(private theInAppBrowser: InAppBrowser,public navCtrl: NavController,public alertCtrl: AlertController) { }
+  constructor(/*public http: Http,*/private theInAppBrowser: InAppBrowser,public navCtrl: NavController,public alertCtrl: AlertController) { }
 
   public openWithInAppBrowser(url : string){
       let target = "_blank";
       this.theInAppBrowser.create(url,target,this.options);
+
+
+      /*this.theInAppBrowser.on("loadstart").subscribe(event=>{
+        alert(event);
+      });
+
+
+
+      this.http.get('https://partners-login.eliotbylegrand.com/authorize?client_id=358ca400-fdf6-4357-8cca-27caa6699197&response_type=code&redirect_uri=https://login.microsoftonline.com/tfp/oauth2/nativeclient')
+      .subscribe(data => {
+          this.devices = data;
+          console.log(data);
+      });*/
+
+
+
   }
 
   goListPage(): void {
