@@ -39,20 +39,15 @@ export class HelloIonicPage {
       let target = "_blank";
       this.theInAppBrowser.create(url,target,this.options);
 
-
       /*this.theInAppBrowser.on("loadstart").subscribe(event=>{
         alert(event);
       });
-
-
 
       this.http.get('https://partners-login.eliotbylegrand.com/authorize?client_id=358ca400-fdf6-4357-8cca-27caa6699197&response_type=code&redirect_uri=https://login.microsoftonline.com/tfp/oauth2/nativeclient')
       .subscribe(data => {
           this.devices = data;
           console.log(data);
       });*/
-
-
 
   }
 
