@@ -15,9 +15,9 @@
 <ion-content>
 
   <ion-list>
-    <button ion-item *ngFor="let device of devices" (click)="deviceTapped($event, device)" (press)="openMenu()">
+    <button ion-item *ngFor="let key of keys; let i = index" (click)="deviceTapped($event, devices[key])" (press)="openMenu()">
       <ion-icon name="cog" item-left></ion-icon>
-      {{device.nomDevice}}
+      {{devices[key].nomDevice}}
     </button>
   </ion-list>
 
