@@ -1,0 +1,58 @@
+[
+    {
+        "geidDevice": "tipo",
+        "lastMetricUnitName": "degre",
+        "lastMetrics": "10.7",
+        "nomDevice": "Temperature 1",
+        "typeDevice": "temperature"
+    },
+    {
+        "geidDevice": "geegdvzeg",
+        "lastMetricUnitName": "degre",
+        "lastMetrics": "10.6",
+        "nomDevice": "Temperature 2",
+        "typeDevice": "temperature"
+    },
+    {
+        "geidDevice": "mlkzokd",
+        "lastMetricUnitName": "%",
+        "lastMetrics": "27.9",
+        "nomDevice": "Humidity 1",
+        "typeDevice": "humidity"
+    },
+    {
+        "geidDevice": "pokzefmkld",
+        "lastMetricUnitName": "%",
+        "lastMetrics": "35.9",
+        "nomDevice": "Humidity 2",
+        "typeDevice": "humidity"
+    },
+	{
+        "geidDevice": "apoklmdf,",
+        "lastMetricUnitName": "dB",
+        "lastMetrics": "84.6",
+        "nomDevice": "Sound Level 1",
+        "typeDevice": "sound"
+    },
+    {
+        "geidDevice": "lkvrerml",
+        "lastMetricUnitName": "dB",
+        "lastMetrics": "109.7",
+        "nomDevice": "Sound level 2",
+        "typeDevice": "sound"
+    },
+    {
+        "geidDevice": "fmdjkegv",
+        "lastMetricUnitName": "lumen",
+        "lastMetrics": "842",
+        "nomDevice": "Light 1",
+        "typeDevice": "light"
+    },
+    {
+        "geidDevice": "vokjrepijjv",
+        "lastMetricUnitName": "ppm",
+        "lastMetrics": "1354",
+        "nomDevice": "Co2 1",
+        "typeDevice": "Co2"
+    }
+]

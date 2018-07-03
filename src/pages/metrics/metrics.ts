@@ -29,10 +29,10 @@ export class MetricsPage {
 
                 type: 'bar',
                 data: {
-                    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+                    labels: ["January", "February", "March", "April", "May", "June"],
                     datasets: [{
-                        label: '# of Votes',
-                        data: [12, 19, 3, 5, 2, 3],
+                        label: 'Humidity level (%)',
+                        data: [35, 40, 72, 35, 20, 24],
                         backgroundColor: [
                             'rgba(255, 99, 132, 0.2)',
                             'rgba(54, 162, 235, 0.2)',
@@ -100,7 +100,7 @@ export class MetricsPage {
                     labels: ["January", "February", "March", "April", "May", "June", "July"],
                     datasets: [
                         {
-                            label: "My First dataset",
+                            label: "Temperature",
                             fill: false,
                             lineTension: 0.1,
                             backgroundColor: "rgba(75,192,192,0.4)",
@@ -118,7 +118,7 @@ export class MetricsPage {
                             pointHoverBorderWidth: 2,
                             pointRadius: 1,
                             pointHitRadius: 10,
-                            data: [65, 59, 80, 81, 56, 55, 40],
+                            data: [2, 4, 14, 12, 21, 28, 32],
                             spanGaps: false,
                         }
                     ]
