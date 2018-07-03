@@ -1,0 +1,11 @@
+{"devices": {"device": {
+    "nomDevice": "oui",
+    "unite": {"nomUnite": "temperature"},
+    "lastMetric": 0,
+    "geidDevice": 1,
+    "users": {
+        "nameUser": "test",
+        "emailUser": "test",
+        "id": 1
+    }
+}}}
