@@ -21,9 +21,11 @@ export class ListPage {
   constructor(public http: Http,public alertCtrl: AlertController,public actionsheetCtrl: ActionSheetController,public navCtrl: NavController, public navParams: NavParams) {
 
     /*this.http.get('http://10.167.129.210:15080/RESTModuleRemote/api/mobile/getDevices/1')
-        .map(res => res.json()).subscribe(data => {
-        this.devices = data;
+      .map(res => res.json().devices).subscribe(data => {
         console.log(data);
+        this.devices = data;
+        this.keys = Object.keys(this.devices);
+        console.log(this.keys);
     });*/
 
     this.http.get('assets/data/test2.json')
